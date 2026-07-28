@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Phathu Caption Video Studio</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="controls">
+
+<h1>PHATHU CAPTION VIDEO STUDIO</h1>
+
+<input
+type="file"
+id="imageInput"
+accept="image/*">
+
+<textarea
+id="captionInput"
+placeholder="Type Caption..."></textarea>
+
+<select id="voiceSelect"></select>
+
+<label>Speech Speed</label>
+
+<input
+type="range"
+id="speed"
+min="0.5"
+max="2"
+step="0.1"
+value="1">
+
+<label>Font Size</label>
+
+<input
+type="range"
+id="fontSize"
+min="24"
+max="80"
+value="42">
+
+<label>Caption Color</label>
+
+<input
+type="color"
+id="textColor"
+value="#FFFFFF">
+
+<label>Highlight Color</label>
+
+<input
+type="color"
+id="highlightColor"
+value="#FFD700">
+
+<button id="previewBtn">
+Preview
+</button>
+
+<button id="generateBtn">
+Generate Video
+</button>
+
+<button id="saveBtn">
+Save Video
+</button>
+
+</div>
+
+<div class="workspace">
+
+<div id="preview">
+
+<img
+id="photo"
+src="">
+
+<div id="captionDisplay">
+
+YOUR CAPTION APPEARS HERE
+
+</div>
+
+<img
+src="logo.png"
+id="logo">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
